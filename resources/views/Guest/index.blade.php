@@ -17,7 +17,7 @@
                     </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    SEI NELLA PAGE PUBBLICAA
                 </div>
             </div>
         </div>
