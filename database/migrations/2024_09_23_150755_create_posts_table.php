@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->name()
+
+            $table->string('title');
+            $table->text('subject');
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->tinyInteger('number_of_posts')->unsigned();
+            $table->string('collaborators');
+
             $table->timestamps();
         });
     }
